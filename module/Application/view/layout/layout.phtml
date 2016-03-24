@@ -1,0 +1,44 @@
+<?php
+$this->headTitle()->setSeparator(' - ')->setAutoEscape(false);
+$this->headTitle('application_title_default');
+$this->headMeta()->setCharset('UTF-8');
+$this->headMeta()->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+$this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
+$this->headLink(array('rel' => 'shortcut icon', 'href' => '/img/favicon.ico'));
+$this->headLink()->appendStylesheet('/css/bootstrap.min.css');
+$this->headLink()->appendStylesheet('/css/tether.min.css');
+$this->headLink()->appendStylesheet('/css/custom.css');
+$this->inlineScript()->prependFile('/js/bootstrap.min.js', 'text/javascript');
+$this->inlineScript()->prependFile('/js/tether.min.js', 'text/javascript');
+$this->inlineScript()->prependFile('/js/jquery.min.js', 'text/javascript');
+?>
+<?php echo $this->doctype() . "\n"; ?>
+<html lang="en">
+<head>
+    <?php echo $this->headTitle() . "\n"; ?>
+    <?php echo $this->headMeta() . "\n"; ?>
+    <?php echo $this->headLink() . "\n"; ?>
+    <?php echo $this->headScript() . "\n"; ?>
+    <?php echo $this->headStyle() . "\n"; ?>
+</head>
+<body>
+<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+    <a class="navbar-brand" href="/">ZF3 Skeleton</a>
+    <ul class="nav navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+    </ul>
+</nav>
+<div class="container">
+    <?php echo $this->content; ?>
+</div>
+<?php echo $this->inlineScript() ?>
+</body>
+</html>
