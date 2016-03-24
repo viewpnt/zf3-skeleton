@@ -49,13 +49,8 @@ class Module implements
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
 
-        // add layout listener
-        $eventManager->attach('ViewResolver', function () {
-            return new LayoutListener(array('header', 'footer'));
-        });
-
         // configure session
-        $e->getApplication()->getServiceManager()->get('Session\Config');
+        // $e->getApplication()->getServiceManager()->get('Session\Config');
     }
 
     /**
