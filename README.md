@@ -18,7 +18,7 @@ git clone https://github.com/arcostasi/zf3-skeleton.git
 2 - Change to the directory created
 
 ```bash
-cd slimantic-skeleton/
+cd zf3-skeleton/
 ```
 
 3 - Download Composer
