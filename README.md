@@ -3,7 +3,7 @@ Zend Framework 3 Skeleton
 
 This skeleton is a simple starting point for you to begin building your application on ZF3.
 
-See the [online demo](http://arcostasi.com/zf3-skeleton/).
+See the [online demo](http://git.arcostasi.com/zf3-skeleton/).
 
 This skeleton use Composer, Zend Framework 3, jQuery and Bootstrap 4
 
